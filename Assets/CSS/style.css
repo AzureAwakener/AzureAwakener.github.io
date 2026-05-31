@@ -1,0 +1,40 @@
+/* Experimental Color Scheme */
+:root {
+	--fall-ink: #2a1c12;
+	--fall-ink-soft: #5a4534;
+	--fall-cream: #f6efe3;
+	--fall-wheat: #e6d3b6;
+	--fall-rust: #b14a1d;
+	--fall-gold: #c8921a;
+
+	--bg: var(--fall-cream);
+	--bg-alt: var(--fall-wheat);
+	--text: var(--fall-ink);
+	--text-muted: var(--fall-ink-soft);
+	--accent: var(--fall-rust);
+	--accent-2: var(--fall-gold);
+	--surface: #ffffff;
+	--border: #d6c2a6;
+	--link: var(--fall-rust);
+	--link-hover: var(--fall-gold);
+	--focus: var(--fall-gold);
+}
+
+body {
+	background: var(--bg);
+	color: var(--text);
+}
+
+a {
+	color: var(--link);
+}
+
+a:hover,
+a:focus {
+	color: var(--link-hover);
+}
+
+::selection {
+	background: var(--fall-rust);
+	color: var(--fall-cream);
+}
