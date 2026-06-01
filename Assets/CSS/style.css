@@ -20,11 +20,6 @@
 	--focus: var(--fall-gold);
 }
 
-body {
-	background: var(--bg);
-	color: var(--text);
-}
-
 a {
 	color: var(--link);
 }
@@ -37,4 +32,167 @@ a:focus {
 ::selection {
 	background: var(--fall-rust);
 	color: var(--fall-cream);
+}
+
+body {
+	font-family: "Source Sans 3", "Segoe UI", sans-serif;
+}
+
+.web-page {
+	background: linear-gradient(180deg, #3a2c23 0%, #2c221c 60%, #231b16 100%);
+	color: var(--fall-cream);
+	min-height: 100vh;
+}
+
+.header {
+	background: #2b211a;
+	border-bottom: 1px solid #3e2f25;
+}
+
+.logo {
+	width: 72px;
+	height: 72px;
+	filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.35));
+}
+
+.brand {
+	font-family: "Cormorant Garamond", "Georgia", serif;
+	font-size: 1.35rem;
+	color: var(--fall-cream);
+}
+
+.subtitle {
+	color: #cdb9a1;
+	font-size: 0.9rem;
+}
+
+.nav-links a {
+	color: var(--fall-cream);
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+	color: var(--fall-gold);
+}
+
+.card {
+	background: #2e241e;
+	border: 1px solid #3d2f26;
+	border-radius: 20px;
+	padding: 24px;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.profile-picture-wrap {
+	width: 190px;
+	height: 190px;
+	border-radius: 50%;
+	border: 3px solid var(--fall-rust);
+	overflow: hidden;
+}
+
+.profile-picture {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.name {
+	font-family: "Cormorant Garamond", "Georgia", serif;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+.role {
+	color: #e2d2bf;
+	font-size: 0.95rem;
+}
+
+.job-title {
+	color: var(--fall-gold);
+	font-weight: 600;
+}
+
+.edu {
+	color: #d9c7b4;
+	font-size: 0.9rem;
+}
+
+.fall-muted {
+	color: #c7b29e;
+}
+
+.section-title {
+	font-family: "Cormorant Garamond", "Georgia", serif;
+	color: var(--fall-gold);
+	margin-bottom: 18px;
+}
+
+.exp {
+	padding-bottom: 16px;
+	margin-bottom: 16px;
+	border-bottom: 1px solid #3d2f26;
+}
+
+.exp:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.exp-header {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	font-weight: 600;
+}
+
+.exp-title {
+	color: #e3d1be;
+}
+
+.exp-years {
+	color: var(--fall-gold);
+}
+
+.exp-list {
+	margin: 0;
+	padding-left: 18px;
+	color: #d8c6b3;
+}
+
+.exp-list li {
+	margin-bottom: 6px;
+}
+
+.thumb {
+	background: #3a2d26;
+	border-radius: 12px;
+	overflow: hidden;
+	border: 1px solid #4a3a31;
+}
+
+.thumb img {
+	width: 100%;
+	height: 240px;
+	object-fit: cover;
+	display: block;
+}
+
+.footer {
+	background: #241b15;
+	border-top: 1px solid #362a22;
+}
+
+.footer-title {
+	color: var(--fall-gold);
+	font-weight: 600;
+	margin-bottom: 6px;
+}
+
+@media (max-width: 991px) {
+	.exp-header {
+		flex-direction: column;
+	}
 }
