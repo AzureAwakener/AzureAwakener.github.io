@@ -6,18 +6,8 @@
 	--fall-wheat: #e6d3b6;
 	--fall-rust: #b14a1d;
 	--fall-gold: #c8921a;
-
-	--bg: var(--fall-cream);
-	--bg-alt: var(--fall-wheat);
-	--text: var(--fall-ink);
-	--text-muted: var(--fall-ink-soft);
-	--accent: var(--fall-rust);
-	--accent-2: var(--fall-gold);
-	--surface: #ffffff;
-	--border: #d6c2a6;
 	--link: var(--fall-rust);
 	--link-hover: var(--fall-gold);
-	--focus: var(--fall-gold);
 }
 
 a {
