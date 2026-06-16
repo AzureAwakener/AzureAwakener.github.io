@@ -40,8 +40,8 @@
 							/>
 						</div>
 						<h2 class="name mt-3">Laurence Abarquez</h2>
-						<div class="role">BSIT Student</div>
-						<div class="job-title mt-3">Aspiring QA Tester</div>
+						<div class="role">2nd Year BSIT Student</div>
+						<div class="job-title mt-3">Aspiring Game Developer</div>
 						<div class="edu mt-4">
 							<div><big>P</big>OLYTECHNIC <big>U</big>NIVERSITY</div>
 							<div><i>of the</i> <big>P</big>HILIPPINES</div>
@@ -51,7 +51,7 @@
 				</div>
 				<div class="col-lg-6">
 					<div class="card h-100">
-						<h3 class="section-title">Experiences</h3>
+						<h3 class="section-title">Job History</h3>
 
 						<div class="exp">
 							<div class="exp-header">
@@ -93,12 +93,16 @@
 					<div class="card h-100 text-center">
 						<h2 class="section-title mt-3">Tools</h2>
 						<div class="tools-container">
+							<div class="icon">
+								<img src="Assets/icon/adobeanimate-icon.svg" alt="Adobe Animate">
+							</div>
+
+							<div class="icon">
+								<img src="Assets/icon/aseprite-icon.svg" alt="Aseprite">
+							</div>
+
 						    <div class="icon">
 						        <img src="Assets/icon/blender-icon.svg" alt="Blender">
-						    </div>
-						
-						    <div class="icon">
-						        <img src="Assets/icon/cisco-icon.svg" alt="Cisco Packet Tracer">
 						    </div>
 						
 							<div class="icon">
@@ -116,6 +120,10 @@
 						    <div class="icon">
 						        <img src="Assets/icon/photoshop-icon.svg" alt="Adobe Photoshop">
 						    </div>
+
+						    <div class="icon">
+						        <img src="Assets/icon/unity-icon.svg" alt="Unity Engine">
+						    </div>
 						
 						</div>
 					</div>
@@ -132,7 +140,8 @@
 							<li>Technical Troubleshooting</li>
 							<li>Technical Documentation</li>
 							<li>Guide Writing</li>
-							<li>Event Coordination</li>
+							<li>Basic Narrative Design</li>
+							<li>Basic 2D Animation</li>
 							<li>Digital Illustration</li>
 							<li>Problem Solving</li>
 							<li>Communication</li>
@@ -140,43 +149,92 @@
 						</ul>
 					</div>
 				</div>
+
 				<div class="col-lg-8" id="projects">
-					<div class="card h-100">
-						<h3 class="section-title">Projects</h3>
-						<div class="fall-muted mb-2">Artwork Gallery</div>
-						<div class="row g-3">
-							<div class="col-6 col-md-4">
-								<div class="thumb">
-									<img
-										src="Assets/img/art-1.png"
-										alt="Artwork 1"
-									/>
-								</div>
-							</div>
-							<div class="col-6 col-md-4">
-								<div class="thumb">
-									<img
-										src="Assets/img/art-2.jpg"
-										alt="Artwork 2"
-									/>
-								</div>
-							</div>
-							<div class="col-6 col-md-4">
-								<div class="thumb">
-									<img
-										src="Assets/img/art-3.png"
-										alt="Artwork 3"
-									/>
-								</div>
-							</div>
-						</div>
-						<div class="mt-3">
-							<div class="fall-muted">More Artworks</div>
-							<ul class="exp-list">
-								<li><a href="https://www.pixiv.net/en/users/125733680/illustrations">Pixiv: Lau</a></li>
-							</ul>
-						</div>
-					</div>
+				    <div class="card h-100">
+				        <h3 class="section-title">Projects</h3>
+					
+				        <!-- Buttons -->
+				        <ul class="nav nav-pills mb-3" id="project-tabs">
+				            <li class="nav-item">
+				                <button class="nav-link active"
+				                        data-bs-toggle="pill"
+				                        data-bs-target="#artworks">
+				                    Artwork Gallery
+				                </button>
+				            </li>
+						
+				            <li class="nav-item">
+				                <button class="nav-link"
+				                        data-bs-toggle="pill"
+				                        data-bs-target="#game">
+				                    Chronicles of The Red Dawn
+				                </button>
+				            </li>
+						
+				            <li class="nav-item">
+				                <button class="nav-link"
+				                        data-bs-toggle="pill"
+				                        data-bs-target="#novel">
+				                    VAMP!
+				                </button>
+				            </li>
+				        </ul>
+					
+				        <!-- Content -->
+				        <div class="tab-content">
+				            <div class="tab-pane fade show active" id="artworks">
+				                <div class="row g-3">
+				                    <div class="col-6 col-md-4">
+				                        <div class="thumb">
+				                            <img src="Assets/img/art-1.png" alt="Artwork 1">
+				                        </div>
+				                    </div>
+								
+				                    <div class="col-6 col-md-4">
+				                        <div class="thumb">
+				                            <img src="Assets/img/art-2.jpg" alt="Artwork 2">
+				                        </div>
+				                    </div>
+								
+				                    <div class="col-6 col-md-4">
+				                        <div class="thumb">
+				                            <img src="Assets/img/art-3.png" alt="Artwork 3">
+				                        </div>
+				                    </div>
+				                </div>
+							
+				                <div class="mt-3">
+				                    <a href="https://www.pixiv.net/en/users/125733680/illustrations"
+				                       target="_blank">
+				                        View More Artworks
+				                    </a>
+				                </div>
+				            </div>
+						
+				            <div class="tab-pane fade" id="game">
+				                <h5>Chronicles of The Red Dawn (2024)</h5>
+								<div class="col-4 col-md-7">
+				                        <div class="thumb">
+				                            <a href="https://github.com/AzureAwakener/RPG-Combat-System.git"><img src="Assets/img/game.png" alt="Chronicles of The Red Dawn"></a>
+				                        </div>
+				                </div> <br>
+				                <p>
+				                    A Turn-Based JRPG system project following the story of a wandering warrior and his strange encounter in a demonic village.
+				                </p>
+				            </div>
+						
+				            <div class="tab-pane fade" id="novel">
+				                <h5>VAMP!</h5>
+								<h6>*Cover Art in progress</h6>
+				                <p>
+				                    A dark modern-fantasy story about a young man recruited into a clandestine military organization that secretly eradicates vampires.
+									 As he rises through the ranks, he uncovers the truth behind his sister's disappearance and his own role in a centuries-old plan
+									 that could reshape the balance between humanity and the supernatural.
+				                </p>
+				            </div>					
+				        </div>
+				    </div>
 				</div>
 			</section>
 		</main>
