@@ -148,12 +148,18 @@ body {
 
 .exp-list {
 	margin: 0;
-	padding-left: 18px;
+	text-align: justify;
 	color: #d8c6b3;
+	list-style: none;
 }
 
 .exp-list li {
 	margin-bottom: 6px;
+	transition: transform 0.3s ease;	
+}
+
+.exp-list li:hover {
+    transform: translateY(-5px);
 }
 
 .thumb {
