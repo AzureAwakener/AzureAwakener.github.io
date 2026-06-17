@@ -28,6 +28,10 @@ body {
 	font-family: "Source Sans 3", "Segoe UI", sans-serif;
 }
 
+p {
+	color: var(--fall-wheat);
+}
+
 .web-page {
 	background: linear-gradient(180deg, #3a2c23 0%, #2c221c 60%, #231b16 100%);
 	color: var(--fall-cream);
