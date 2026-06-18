@@ -235,35 +235,35 @@
 					<div class="card h-100 text-center">
 						<h2 class="section-title mt-3">Tools</h2>
 						<div class="tools-container">
-							<div class="icon">
+							<div class="icon" data-bs-toggle="tooltip" title="Adobe Animate">
 								<img src="Assets/icon/adobeanimate-icon.svg" alt="Adobe Animate">
 							</div>
 
-							<div class="icon">
+							<div class="icon" data-bs-toggle="tooltip" title="Aseprite">
 								<img src="Assets/icon/aseprite-icon.svg" alt="Aseprite">
 							</div>
 
-						    <div class="icon">
+						    <div class="icon" data-bs-toggle="tooltip" title="Blender">
 						        <img src="Assets/icon/blender-icon.svg" alt="Blender">
 						    </div>
 						
-							<div class="icon">
+							<div class="icon" data-bs-toggle="tooltip" title="Figma">
 								<img src="Assets/icon/figma-icon.svg" alt="Figma">
 							</div>
 
-						    <div class="icon">
+						    <div class="icon" data-bs-toggle="tooltip" title="Git">
 						        <img src="Assets/icon/git-icon.svg" alt="Git">
 						    </div>
 						
-						    <div class="icon">
+						    <div class="icon" data-bs-toggle="tooltip" title="Github">
 						        <img src="Assets/icon/github-icon.svg" alt="GitHub">
 						    </div>
 
-						    <div class="icon">
+						    <div class="icon" data-bs-toggle="tooltip" title="Adobe Photoshop">
 						        <img src="Assets/icon/photoshop-icon.svg" alt="Adobe Photoshop">
 						    </div>
 
-						    <div class="icon">
+						    <div class="icon" data-bs-toggle="tooltip" title="Unity Engine">
 						        <img src="Assets/icon/unity-icon.svg" alt="Unity Engine">
 						    </div>
 						
@@ -303,4 +303,10 @@
 		</footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+	  return new bootstrap.Tooltip(tooltipTriggerEl)
+	})
+</script>
 </html>
